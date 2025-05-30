@@ -1,0 +1,8 @@
+# Build with debug info
+build --copt=-g
+build --strip=never
+
+# For debugging with lldb
+build:debug --compilation_mode=dbg
+build:debug --copt=-O0
+build:debug --copt=-g3

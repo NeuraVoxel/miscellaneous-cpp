@@ -1,0 +1,38 @@
+# Bazel generated directories
+/bazel-bin/
+/bazel-out/
+/bazel-testlogs/
+/bazel-hello-bazel/
+/bazel-*
+
+# Bazel module files
+MODULE.bazel.lock
+
+# Bazel symlinks
+.bazel/
+
+# Bazel execution log
+command.log
+command.log.old
+
+# Bazel analysis cache
+.cache/
+
+# Bazel IntelliJ plugin
+.ijwb/
+.aswb/
+
+# Bazel VSCode plugin
+.vscode/
+.history/
+
+# Bazel Eclipse plugin
+.project
+.classpath
+.settings/
+
+# Bazel CLion plugin
+.clwb/
+
+# Bazel user specific files
+user.bazelrc
