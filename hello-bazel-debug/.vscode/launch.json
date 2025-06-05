@@ -11,7 +11,7 @@
             "cwd": "${workspaceFolder}/src",
             "environment": [],
             "externalConsole": false,
-            "sourceMap": {
+            "sourceFileMap": {
                 // "/proc/self/cwd": "${workspaceFolder}/src",
                 // "/root/.cache/bazel/_bazel_root/49840d4a1ae42f1d0f509a2d1a045d25/execroot/hello_bazel_debug/src": "${workspaceFolder}/src",
                 // "${workspaceFolder}/src": "${workspaceFolder}/src"

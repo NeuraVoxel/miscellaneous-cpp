@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "BUILD": "bazel",
+        "WORKSPACE": "bazel",
+        "*.bzl": "bazel"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/root/.cache/bazel/_bazel_root/2ae05c22cb8097697e0d21935d0b9fe9/execroot/**"
+    ],
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++14",
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "bazel-*": true
+    }
+}

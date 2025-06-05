@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "bazel-build",
+      "type": "shell",
+      "command": "bazel",
+      "args": [
+        "build",
+        "//...",
+        "--compilation_mode=dbg"
+        // "--spawn_strategy=local"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
