@@ -8,9 +8,7 @@
             "args": [
                 "build",
                 "//...",
-                "--config=debug",
-                "--spawn_strategy=local",
-                "--verbose_failures"
+                "--compilation_mode=dbg"
             ],
             "group": {
                 "kind": "build",
@@ -18,22 +16,7 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ],
-            "options": {
-                "env": {
-                    "BAZEL_CXXOPTS": "-std=c++17"
-                }
-            }
-        },
-        {
-            "label": "clean",
-            "type": "shell",
-            "command": "bazel",
-            "args": [
-                "clean",
-                "--expunge"
-            ],
-            "problemMatcher": []
+            ]
         }
     ]
 }
