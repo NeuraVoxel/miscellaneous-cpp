@@ -5,12 +5,21 @@
             "name": "Debug C++ (Bazel)",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/bazel-bin/hello_debug",
+            "program": "${workspaceFolder}/build/bin/hello_debug",
             "args": [],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "build",
             "sourceMap": {
-                ".": "${workspaceFolder}"
+                ".": "${workspaceFolder}",
+                "/private/var/tmp/_bazel_": "${workspaceFolder}",
+                "./bazel-output": "${workspaceFolder}"
+            },
+            "postRunCommands": [
+                "settings set target.source-map /proc/self/cwd/ ${workspaceFolder}"
+            ],
+            "env": {
+                "LLDB_DEBUGSERVER_LOG": "1",
+                "LLDB_DEBUGSERVER_LOG_FILE": "/tmp/lldb-debugserver.log"
             }
         }
     ]

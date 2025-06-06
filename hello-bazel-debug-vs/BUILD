@@ -1,5 +1,0 @@
-cc_binary(
-    name = "hello_debug",
-    srcs = ["main.cpp"],
-    copts = ["-g"], # 添加调试信息
-)

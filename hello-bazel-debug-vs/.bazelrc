@@ -1,0 +1,24 @@
+# 设置输出目录
+startup --output_base=./bazel-output
+build --symlink_prefix=./build/
+
+# 调试模式构建配置
+build:debug --compilation_mode=dbg
+build:debug --copt=-g
+build:debug --copt=-O0
+build:debug --copt=-fno-omit-frame-pointer
+build:debug --strip=never
+build:debug --cxxopt=-std=c++17
+
+# 默认使用调试配置
+build --config=debug
+
+# 保留调试符号
+build --strip=never
+
+# 启用详细的构建输出
+build --verbose_failures
+build --sandbox_debug
+
+# 禁用增量构建以避免缓存问题
+build --noincremental_dexing

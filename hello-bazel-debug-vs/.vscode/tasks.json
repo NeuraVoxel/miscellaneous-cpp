@@ -7,8 +7,10 @@
             "command": "bazel",
             "args": [
                 "build",
-                "//...",
-                "--compilation_mode=dbg"
+                "//:hello_debug",
+                "--config=debug",
+                "--spawn_strategy=local",
+                "--verbose_failures"
             ],
             "group": {
                 "kind": "build",
@@ -16,7 +18,42 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ]
+            ],
+            "options": {
+                "env": {
+                    "BAZEL_CXXOPTS": "-std=c++17"
+                }
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "bazel",
+            "args": [
+                "clean",
+                "--expunge"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clean-output",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "./bazel-output",
+                "./build"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "full-clean",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "clean",
+                "clean-output"
+            ],
+            "problemMatcher": []
         }
     ]
 }
