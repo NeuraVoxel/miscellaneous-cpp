@@ -72,7 +72,7 @@
 
 使用Bazel构建项目：
 ```bash
-bazel build //...
+bazel build //:hello_debug --config=debug --spawn_strategy=local --verbose_failures
 ```
 
 运行程序：
