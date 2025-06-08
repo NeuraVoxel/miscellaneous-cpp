@@ -1,3 +1,4 @@
+# 位于项目根目录，存储​​全局构建配置 
 # 设置输出目录
 startup --output_base=./bazel-output
 build --symlink_prefix=./build/
