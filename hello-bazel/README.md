@@ -86,6 +86,11 @@ bazel build --config=debug //:hello_world
 gdb ./bazel-bin/hello_world
 ```
 
+# 启动nemiver
+```
+nemiver
+```
+
 在GDB中的基本命令：
 ```bash
 (gdb) break main.cpp:4  # 设置断点

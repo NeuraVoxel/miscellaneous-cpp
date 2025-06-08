@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Debug C++ (Bazel)",
-            "type": "lldb",
+             "type": "cppdbg",//"lldb",
             "request": "launch",
             "program": "${workspaceFolder}/build/bin/hello_debug",
             "args": [],
